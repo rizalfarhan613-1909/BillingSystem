@@ -1,0 +1,15 @@
+C:\Users\rizal\Project\BillingSystem\BillingSystem.Application\bin\Debug\net8.0\BillingSystem.Application.deps.json
+c:\Users\rizal\Project\BillingSystem\BillingSystem.Application\bin\Debug\net8.0\BillingSystem.Application.dll
+c:\Users\rizal\Project\BillingSystem\BillingSystem.Application\bin\Debug\net8.0\BillingSystem.Application.pdb
+c:\Users\rizal\Project\BillingSystem\BillingSystem.Application\bin\Debug\net8.0\BillingSystem.Domain.dll
+c:\Users\rizal\Project\BillingSystem\BillingSystem.Application\bin\Debug\net8.0\BillingSystem.Domain.pdb
+c:\Users\rizal\Project\BillingSystem\BillingSystem.Application\obj\Debug\net8.0\BillingSystem.Application.csproj.AssemblyReference.cache
+c:\Users\rizal\Project\BillingSystem\BillingSystem.Application\obj\Debug\net8.0\BillingSystem.Application.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\rizal\Project\BillingSystem\BillingSystem.Application\obj\Debug\net8.0\BillingSystem.Application.AssemblyInfoInputs.cache
+c:\Users\rizal\Project\BillingSystem\BillingSystem.Application\obj\Debug\net8.0\BillingSystem.Application.AssemblyInfo.cs
+c:\Users\rizal\Project\BillingSystem\BillingSystem.Application\obj\Debug\net8.0\BillingSystem.Application.csproj.CoreCompileInputs.cache
+C:\Users\rizal\Project\BillingSystem\BillingSystem.Application\obj\Debug\net8.0\BillingS.86DAB677.Up2Date
+c:\Users\rizal\Project\BillingSystem\BillingSystem.Application\obj\Debug\net8.0\BillingSystem.Application.dll
+c:\Users\rizal\Project\BillingSystem\BillingSystem.Application\obj\Debug\net8.0\refint\BillingSystem.Application.dll
+c:\Users\rizal\Project\BillingSystem\BillingSystem.Application\obj\Debug\net8.0\BillingSystem.Application.pdb
+C:\Users\rizal\Project\BillingSystem\BillingSystem.Application\obj\Debug\net8.0\ref\BillingSystem.Application.dll

@@ -1,0 +1,95 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "BillingSystem.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/BillingSystem.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BillingSystem.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BillingSystem.Domain/1.0.0": {
+      "type": "project",
+      "path": "../BillingSystem.Domain/BillingSystem.Domain.csproj",
+      "msbuildProject": "../BillingSystem.Domain/BillingSystem.Domain.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "BillingSystem.Domain >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\rizal\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\rizal\\Project\\BillingSystem\\BillingSystem.Application\\BillingSystem.Application.csproj",
+      "projectName": "BillingSystem.Application",
+      "projectPath": "C:\\Users\\rizal\\Project\\BillingSystem\\BillingSystem.Application\\BillingSystem.Application.csproj",
+      "packagesPath": "C:\\Users\\rizal\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\rizal\\Project\\BillingSystem\\BillingSystem.Application\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\rizal\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "C:\\Users\\rizal\\Project\\BillingSystem\\BillingSystem.Domain\\BillingSystem.Domain.csproj": {
+              "projectPath": "C:\\Users\\rizal\\Project\\BillingSystem\\BillingSystem.Domain\\BillingSystem.Domain.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "allWarningsAsErrors": true,
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.426/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

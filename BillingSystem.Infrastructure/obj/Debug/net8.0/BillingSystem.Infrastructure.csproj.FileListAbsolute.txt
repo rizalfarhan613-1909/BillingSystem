@@ -1,0 +1,17 @@
+c:\Users\rizal\Project\BillingSystem\BillingSystem.Infrastructure\bin\Debug\net8.0\BillingSystem.Infrastructure.deps.json
+c:\Users\rizal\Project\BillingSystem\BillingSystem.Infrastructure\bin\Debug\net8.0\BillingSystem.Infrastructure.dll
+c:\Users\rizal\Project\BillingSystem\BillingSystem.Infrastructure\bin\Debug\net8.0\BillingSystem.Infrastructure.pdb
+c:\Users\rizal\Project\BillingSystem\BillingSystem.Infrastructure\bin\Debug\net8.0\BillingSystem.Application.dll
+c:\Users\rizal\Project\BillingSystem\BillingSystem.Infrastructure\bin\Debug\net8.0\BillingSystem.Domain.dll
+c:\Users\rizal\Project\BillingSystem\BillingSystem.Infrastructure\bin\Debug\net8.0\BillingSystem.Application.pdb
+c:\Users\rizal\Project\BillingSystem\BillingSystem.Infrastructure\bin\Debug\net8.0\BillingSystem.Domain.pdb
+c:\Users\rizal\Project\BillingSystem\BillingSystem.Infrastructure\obj\Debug\net8.0\BillingSystem.Infrastructure.csproj.AssemblyReference.cache
+c:\Users\rizal\Project\BillingSystem\BillingSystem.Infrastructure\obj\Debug\net8.0\BillingSystem.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\rizal\Project\BillingSystem\BillingSystem.Infrastructure\obj\Debug\net8.0\BillingSystem.Infrastructure.AssemblyInfoInputs.cache
+c:\Users\rizal\Project\BillingSystem\BillingSystem.Infrastructure\obj\Debug\net8.0\BillingSystem.Infrastructure.AssemblyInfo.cs
+c:\Users\rizal\Project\BillingSystem\BillingSystem.Infrastructure\obj\Debug\net8.0\BillingSystem.Infrastructure.csproj.CoreCompileInputs.cache
+c:\Users\rizal\Project\BillingSystem\BillingSystem.Infrastructure\obj\Debug\net8.0\BillingS.7A241342.Up2Date
+c:\Users\rizal\Project\BillingSystem\BillingSystem.Infrastructure\obj\Debug\net8.0\BillingSystem.Infrastructure.dll
+c:\Users\rizal\Project\BillingSystem\BillingSystem.Infrastructure\obj\Debug\net8.0\refint\BillingSystem.Infrastructure.dll
+c:\Users\rizal\Project\BillingSystem\BillingSystem.Infrastructure\obj\Debug\net8.0\BillingSystem.Infrastructure.pdb
+c:\Users\rizal\Project\BillingSystem\BillingSystem.Infrastructure\obj\Debug\net8.0\ref\BillingSystem.Infrastructure.dll

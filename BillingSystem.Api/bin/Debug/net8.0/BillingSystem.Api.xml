@@ -1,0 +1,256 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BillingSystem.Api</name>
+    </assembly>
+    <members>
+        <member name="M:BillingSystem.Api.Controllers.AuditLogsController.ListAsync(System.String,System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32,System.Int32,System.Threading.CancellationToken)">
+            <summary>
+            Mendapatkan daftar audit log dengan filter dan pagination.
+            </summary>
+            <param name="entityName">Filter berdasarkan nama entitas (optional).</param>
+            <param name="entityId">Filter berdasarkan ID entitas (optional).</param>
+            <param name="action">Filter berdasarkan aksi (optional).</param>
+            <param name="from">Filter dari tanggal (optional).</param>
+            <param name="to">Filter sampai tanggal (optional).</param>
+            <param name="page">Nomor halaman (default: 1).</param>
+            <param name="pageSize">Ukuran halaman 1-100 (default: 50).</param>
+            <returns>Daftar audit log yang difilter dan dipaginasi.</returns>
+            <response code="200">Daftar audit log berhasil diambil.</response>
+            <response code="400">Parameter query tidak valid.</response>
+            <response code="500">Terjadi kesalahan internal server.</response>
+        </member>
+        <member name="M:BillingSystem.Api.Controllers.BillingController.TriggerAsync(BillingSystem.Api.Controllers.TriggerBillingRequest,System.Threading.CancellationToken)">
+            <summary>
+            Memicu proses penagihan (billing run) secara manual.
+            </summary>
+            <param name="request">Request berisi tanggal simulasi (optional, hanya diizinkan jika AllowSimulatedDate=true).</param>
+            <returns>Informasi billing run yang diterima.</returns>
+            <response code="202">Billing run diterima dan dimasukkan ke antrean.</response>
+            <response code="400">Simulated date tidak diizinkan atau request tidak valid.</response>
+            <response code="503">Gagal memasukkan ke antrean (queue).</response>
+            <response code="500">Terjadi kesalahan internal server.</response>
+        </member>
+        <member name="M:BillingSystem.Api.Controllers.CustomersController.CreateAsync(BillingSystem.Api.DTOs.CreateCustomerRequest,System.Threading.CancellationToken)">
+            <summary>
+            Membuat customer baru.
+            </summary>
+            <param name="request">Data customer baru.</param>
+            <returns>Customer yang baru dibuat.</returns>
+            <response code="201">Customer berhasil dibuat.</response>
+            <response code="400">Request tidak valid (validasi gagal).</response>
+            <response code="409">Email sudah terdaftar.</response>
+            <response code="500">Terjadi kesalahan internal server.</response>
+        </member>
+        <member name="M:BillingSystem.Api.Controllers.CustomersController.ListAsync(System.Threading.CancellationToken)">
+            <summary>
+            Mendapatkan daftar semua customer.
+            </summary>
+            <returns>Daftar customer.</returns>
+            <response code="200">Daftar customer berhasil diambil.</response>
+            <response code="500">Terjadi kesalahan internal server.</response>
+        </member>
+        <member name="M:BillingSystem.Api.Controllers.CustomersController.GetByIdAsync(System.Guid,System.Threading.CancellationToken)">
+            <summary>
+            Mendapatkan detail customer berdasarkan ID.
+            </summary>
+            <param name="id">ID customer.</param>
+            <returns>Detail customer.</returns>
+            <response code="200">Detail customer berhasil diambil.</response>
+            <response code="404">Customer tidak ditemukan.</response>
+            <response code="500">Terjadi kesalahan internal server.</response>
+        </member>
+        <member name="M:BillingSystem.Api.Controllers.CustomersController.UpdateAsync(System.Guid,BillingSystem.Api.DTOs.UpdateCustomerRequest,System.Threading.CancellationToken)">
+            <summary>
+            Memperbarui data customer.
+            </summary>
+            <param name="id">ID customer.</param>
+            <param name="request">Data customer yang diperbarui.</param>
+            <returns>Customer yang diperbarui.</returns>
+            <response code="200">Customer berhasil diperbarui.</response>
+            <response code="400">Request tidak valid (validasi gagal).</response>
+            <response code="404">Customer tidak ditemukan.</response>
+            <response code="409">Email sudah digunakan oleh customer lain.</response>
+            <response code="500">Terjadi kesalahan internal server.</response>
+        </member>
+        <member name="M:BillingSystem.Api.Controllers.CustomersController.SoftDeleteAsync(System.Guid,System.Threading.CancellationToken)">
+            <summary>
+            Menonaktifkan customer (soft delete).
+            </summary>
+            <param name="id">ID customer.</param>
+            <response code="204">Customer berhasil dinonaktifkan.</response>
+            <response code="404">Customer tidak ditemukan.</response>
+            <response code="500">Terjadi kesalahan internal server.</response>
+        </member>
+        <member name="M:BillingSystem.Api.Controllers.DashboardController.GetSummaryAsync(System.Threading.CancellationToken)">
+            <summary>
+            Mendapatkan ringkasan performa penagihan.
+            </summary>
+            <returns>Rekap: Total Active Subscriptions, Total Pendapatan Bulan Ini (Paid), Total Tagihan Tertunggak (Overdue).</returns>
+            <response code="200">Ringkasan dashboard berhasil diambil.</response>
+            <response code="500">Terjadi kesalahan internal server.</response>
+        </member>
+        <member name="M:BillingSystem.Api.Controllers.DashboardController.GetRecentTransactionsAsync(System.Threading.CancellationToken)">
+            <summary>
+            Mendapatkan 10 riwayat audit log terbaru dan 10 invoice terakhir yang diproses.
+            </summary>
+            <returns>Transaksi terbaru (audit logs + invoices).</returns>
+            <response code="200">Data transaksi terbaru berhasil diambil.</response>
+            <response code="500">Terjadi kesalahan internal server.</response>
+        </member>
+        <member name="M:BillingSystem.Api.Controllers.InvoicesController.ListAsync(System.Nullable{BillingSystem.Domain.InvoiceStatus},System.String,System.String,System.String,System.Int32,System.Int32,System.Threading.CancellationToken)">
+            <summary>
+            Mendapatkan daftar invoice dengan filter, pencarian, dan pagination.
+            </summary>
+            <param name="status">Filter berdasarkan status invoice (optional).</param>
+            <param name="search">Pencarian berdasarkan nomor invoice, nama customer, atau email (optional).</param>
+            <param name="sortBy">Field untuk sorting: InvoiceNumber, Amount, DueDate, IssueDate (default: IssueDate).</param>
+            <param name="sortDir">Arah sorting: asc atau desc (default: desc).</param>
+            <param name="page">Nomor halaman (default: 1).</param>
+            <param name="pageSize">Ukuran halaman 1-100 (default: 10).</param>
+            <returns>Daftar invoice yang difilter dan dipaginasi.</returns>
+            <response code="200">Daftar invoice berhasil diambil.</response>
+            <response code="400">Parameter query tidak valid.</response>
+            <response code="500">Terjadi kesalahan internal server.</response>
+        </member>
+        <member name="M:BillingSystem.Api.Controllers.InvoicesController.GetByIdAsync(System.Guid,System.Threading.CancellationToken)">
+            <summary>
+            Mendapatkan detail invoice berdasarkan ID.
+            </summary>
+            <param name="id">ID invoice.</param>
+            <returns>Detail invoice.</returns>
+            <response code="200">Detail invoice berhasil diambil.</response>
+            <response code="404">Invoice tidak ditemukan.</response>
+            <response code="500">Terjadi kesalahan internal server.</response>
+        </member>
+        <member name="M:BillingSystem.Api.Controllers.InvoicesController.ChangeStatusAsync(System.Guid,BillingSystem.Api.Controllers.InvoicesController.ChangeInvoiceStatusRequest,System.Threading.CancellationToken)">
+            <summary>
+            Mengubah status invoice.
+            </summary>
+            <param name="id">ID invoice.</param>
+            <param name="request">Request berisi status baru dan alasan (optional).</param>
+            <returns>Invoice dengan status yang diperbarui.</returns>
+            <response code="200">Status invoice berhasil diubah.</response>
+            <response code="400">Request body tidak valid.</response>
+            <response code="404">Invoice tidak ditemukan.</response>
+            <response code="409">Transisi status tidak valid (misal: dari Paid ke Draft).</response>
+            <response code="500">Terjadi kesalahan internal server.</response>
+        </member>
+        <member name="M:BillingSystem.Api.Controllers.SubscriptionPlansController.CreateAsync(BillingSystem.Api.DTOs.CreateSubscriptionPlanRequest,System.Threading.CancellationToken)">
+            <summary>
+            Membuat subscription plan baru.
+            </summary>
+            <param name="request">Data plan baru.</param>
+            <returns>Plan yang baru dibuat.</returns>
+            <response code="201">Plan berhasil dibuat.</response>
+            <response code="400">Request tidak valid (validasi gagal).</response>
+            <response code="409">Nama plan sudah terdaftar.</response>
+            <response code="500">Terjadi kesalahan internal server.</response>
+        </member>
+        <member name="M:BillingSystem.Api.Controllers.SubscriptionPlansController.ListAsync(System.Threading.CancellationToken)">
+            <summary>
+            Mendapatkan daftar semua subscription plan.
+            </summary>
+            <returns>Daftar plan.</returns>
+            <response code="200">Daftar plan berhasil diambil.</response>
+            <response code="500">Terjadi kesalahan internal server.</response>
+        </member>
+        <member name="M:BillingSystem.Api.Controllers.SubscriptionPlansController.GetByIdAsync(System.Guid,System.Threading.CancellationToken)">
+            <summary>
+            Mendapatkan detail subscription plan berdasarkan ID.
+            </summary>
+            <param name="id">ID plan.</param>
+            <returns>Detail plan.</returns>
+            <response code="200">Detail plan berhasil diambil.</response>
+            <response code="404">Plan tidak ditemukan.</response>
+            <response code="500">Terjadi kesalahan internal server.</response>
+        </member>
+        <member name="M:BillingSystem.Api.Controllers.SubscriptionPlansController.UpdateAsync(System.Guid,BillingSystem.Api.DTOs.UpdateSubscriptionPlanRequest,System.Threading.CancellationToken)">
+            <summary>
+            Memperbarui subscription plan.
+            </summary>
+            <param name="id">ID plan.</param>
+            <param name="request">Data plan yang diperbarui.</param>
+            <returns>Plan yang diperbarui.</returns>
+            <response code="200">Plan berhasil diperbarui.</response>
+            <response code="400">Request tidak valid (validasi gagal).</response>
+            <response code="404">Plan tidak ditemukan.</response>
+            <response code="409">Nama plan sudah digunakan oleh plan lain.</response>
+            <response code="500">Terjadi kesalahan internal server.</response>
+        </member>
+        <member name="M:BillingSystem.Api.Controllers.SubscriptionPlansController.DeactivateAsync(System.Guid,System.Threading.CancellationToken)">
+            <summary>
+            Menonaktifkan subscription plan (soft delete).
+            </summary>
+            <param name="id">ID plan.</param>
+            <response code="204">Plan berhasil dinonaktifkan.</response>
+            <response code="404">Plan tidak ditemukan.</response>
+            <response code="500">Terjadi kesalahan internal server.</response>
+        </member>
+        <member name="M:BillingSystem.Api.Controllers.SubscriptionsController.CreateAsync(BillingSystem.Api.DTOs.CreateSubscriptionRequest,System.Threading.CancellationToken)">
+            <summary>
+            Membuat subscription baru.
+            </summary>
+            <param name="request">Data subscription baru.</param>
+            <returns>Subscription yang baru dibuat.</returns>
+            <response code="201">Subscription berhasil dibuat.</response>
+            <response code="400">Request tidak valid (validasi gagal).</response>
+            <response code="404">Customer atau Plan tidak ditemukan/tidak aktif.</response>
+            <response code="500">Terjadi kesalahan internal server.</response>
+        </member>
+        <member name="M:BillingSystem.Api.Controllers.SubscriptionsController.ListAsync(System.Threading.CancellationToken)">
+            <summary>
+            Mendapatkan daftar semua subscription.
+            </summary>
+            <returns>Daftar subscription.</returns>
+            <response code="200">Daftar subscription berhasil diambil.</response>
+            <response code="500">Terjadi kesalahan internal server.</response>
+        </member>
+        <member name="M:BillingSystem.Api.Controllers.SubscriptionsController.GetByIdAsync(System.Guid,System.Threading.CancellationToken)">
+            <summary>
+            Mendapatkan detail subscription berdasarkan ID.
+            </summary>
+            <param name="id">ID subscription.</param>
+            <returns>Detail subscription.</returns>
+            <response code="200">Detail subscription berhasil diambil.</response>
+            <response code="404">Subscription tidak ditemukan.</response>
+            <response code="500">Terjadi kesalahan internal server.</response>
+        </member>
+        <member name="M:BillingSystem.Api.Controllers.SubscriptionsController.PauseAsync(System.Guid,BillingSystem.Api.DTOs.PauseSubscriptionRequest,System.Threading.CancellationToken)">
+            <summary>
+            Menghentikan sementara subscription (pause).
+            </summary>
+            <param name="id">ID subscription.</param>
+            <param name="request">Request body (kosong).</param>
+            <returns>Subscription yang diperbarui.</returns>
+            <response code="200">Subscription berhasil di-pause.</response>
+            <response code="400">Subscription tidak berstatus Active.</response>
+            <response code="404">Subscription tidak ditemukan.</response>
+            <response code="500">Terjadi kesalahan internal server.</response>
+        </member>
+        <member name="M:BillingSystem.Api.Controllers.SubscriptionsController.ResumeAsync(System.Guid,BillingSystem.Api.DTOs.ResumeSubscriptionRequest,System.Threading.CancellationToken)">
+            <summary>
+            Melanjutkan subscription yang di-pause (resume).
+            </summary>
+            <param name="id">ID subscription.</param>
+            <param name="request">Request body (kosong).</param>
+            <returns>Subscription yang diperbarui.</returns>
+            <response code="200">Subscription berhasil di-resume.</response>
+            <response code="400">Subscription tidak berstatus Paused.</response>
+            <response code="404">Subscription tidak ditemukan.</response>
+            <response code="500">Terjadi kesalahan internal server.</response>
+        </member>
+        <member name="M:BillingSystem.Api.Controllers.SubscriptionsController.CancelAsync(System.Guid,BillingSystem.Api.DTOs.CancelSubscriptionRequest,System.Threading.CancellationToken)">
+            <summary>
+            Membatalkan subscription.
+            </summary>
+            <param name="id">ID subscription.</param>
+            <param name="request">Request body (kosong).</param>
+            <returns>Subscription yang diperbarui.</returns>
+            <response code="200">Subscription berhasil dibatalkan.</response>
+            <response code="400">Subscription sudah dibatalkan.</response>
+            <response code="404">Subscription tidak ditemukan.</response>
+            <response code="500">Terjadi kesalahan internal server.</response>
+        </member>
+    </members>
+</doc>

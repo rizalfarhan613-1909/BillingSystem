@@ -1,0 +1,11 @@
+C:\Users\rizal\Project\BillingSystem\BillingSystem.Domain\bin\Debug\net8.0\BillingSystem.Domain.deps.json
+c:\Users\rizal\Project\BillingSystem\BillingSystem.Domain\bin\Debug\net8.0\BillingSystem.Domain.dll
+c:\Users\rizal\Project\BillingSystem\BillingSystem.Domain\bin\Debug\net8.0\BillingSystem.Domain.pdb
+c:\Users\rizal\Project\BillingSystem\BillingSystem.Domain\obj\Debug\net8.0\BillingSystem.Domain.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\rizal\Project\BillingSystem\BillingSystem.Domain\obj\Debug\net8.0\BillingSystem.Domain.AssemblyInfoInputs.cache
+c:\Users\rizal\Project\BillingSystem\BillingSystem.Domain\obj\Debug\net8.0\BillingSystem.Domain.AssemblyInfo.cs
+c:\Users\rizal\Project\BillingSystem\BillingSystem.Domain\obj\Debug\net8.0\BillingSystem.Domain.csproj.CoreCompileInputs.cache
+c:\Users\rizal\Project\BillingSystem\BillingSystem.Domain\obj\Debug\net8.0\BillingSystem.Domain.dll
+c:\Users\rizal\Project\BillingSystem\BillingSystem.Domain\obj\Debug\net8.0\refint\BillingSystem.Domain.dll
+c:\Users\rizal\Project\BillingSystem\BillingSystem.Domain\obj\Debug\net8.0\BillingSystem.Domain.pdb
+C:\Users\rizal\Project\BillingSystem\BillingSystem.Domain\obj\Debug\net8.0\ref\BillingSystem.Domain.dll

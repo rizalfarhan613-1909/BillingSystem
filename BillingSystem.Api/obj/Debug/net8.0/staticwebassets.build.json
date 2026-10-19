@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "KcTyS3hdmQK+u9Hk/FW4KmF6dwAqWJtFj9U1x4/ZUzE=",
+  "Source": "BillingSystem.Api",
+  "BasePath": "_content/BillingSystem.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

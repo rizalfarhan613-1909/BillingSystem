@@ -1,0 +1,18 @@
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: "YourStrong@Password123"
+    ports: ["1433:1433"]
+    volumes: ["sqldata:/var/opt/mssql"]
+
+  azurite:
+    image: mcr.microsoft.com/azure-storage/azurite
+    command: azurite-queue --queueHost 0.0.0.0 --loose
+    ports: ["10001:10001"]
+    volumes: ["azurite:/data"]
+
+volumes:
+  sqldata:
+  azurite:

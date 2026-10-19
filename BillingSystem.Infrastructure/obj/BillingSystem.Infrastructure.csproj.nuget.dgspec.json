@@ -1,0 +1,214 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\rizal\\Project\\BillingSystem\\BillingSystem.Infrastructure\\BillingSystem.Infrastructure.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\rizal\\Project\\BillingSystem\\BillingSystem.Application\\BillingSystem.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\rizal\\Project\\BillingSystem\\BillingSystem.Application\\BillingSystem.Application.csproj",
+        "projectName": "BillingSystem.Application",
+        "projectPath": "C:\\Users\\rizal\\Project\\BillingSystem\\BillingSystem.Application\\BillingSystem.Application.csproj",
+        "packagesPath": "C:\\Users\\rizal\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rizal\\Project\\BillingSystem\\BillingSystem.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\rizal\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\rizal\\Project\\BillingSystem\\BillingSystem.Domain\\BillingSystem.Domain.csproj": {
+                "projectPath": "C:\\Users\\rizal\\Project\\BillingSystem\\BillingSystem.Domain\\BillingSystem.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true,
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.426/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\rizal\\Project\\BillingSystem\\BillingSystem.Domain\\BillingSystem.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\rizal\\Project\\BillingSystem\\BillingSystem.Domain\\BillingSystem.Domain.csproj",
+        "projectName": "BillingSystem.Domain",
+        "projectPath": "C:\\Users\\rizal\\Project\\BillingSystem\\BillingSystem.Domain\\BillingSystem.Domain.csproj",
+        "packagesPath": "C:\\Users\\rizal\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rizal\\Project\\BillingSystem\\BillingSystem.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\rizal\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true,
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.426/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\rizal\\Project\\BillingSystem\\BillingSystem.Infrastructure\\BillingSystem.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\rizal\\Project\\BillingSystem\\BillingSystem.Infrastructure\\BillingSystem.Infrastructure.csproj",
+        "projectName": "BillingSystem.Infrastructure",
+        "projectPath": "C:\\Users\\rizal\\Project\\BillingSystem\\BillingSystem.Infrastructure\\BillingSystem.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\rizal\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rizal\\Project\\BillingSystem\\BillingSystem.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\rizal\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\rizal\\Project\\BillingSystem\\BillingSystem.Application\\BillingSystem.Application.csproj": {
+                "projectPath": "C:\\Users\\rizal\\Project\\BillingSystem\\BillingSystem.Application\\BillingSystem.Application.csproj"
+              },
+              "C:\\Users\\rizal\\Project\\BillingSystem\\BillingSystem.Domain\\BillingSystem.Domain.csproj": {
+                "projectPath": "C:\\Users\\rizal\\Project\\BillingSystem\\BillingSystem.Domain\\BillingSystem.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true,
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Azure.Storage.Queues": {
+              "target": "Package",
+              "version": "[12.20.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Options.ConfigurationExtensions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.426/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
