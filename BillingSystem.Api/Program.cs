@@ -12,8 +12,20 @@ using Microsoft.Extensions.Options;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Tambahkan service Controllers, Swagger, dan FluentValidation
+// Tambahkan service Controllers, CORS, Swagger, dan FluentValidation
 builder.Services.AddControllers();
+
+// Konfigurasi CORS untuk frontend Next.js (port 3000)
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(policy =>
+    {
+        policy.WithOrigins("http://localhost:3000", "https://localhost:3000")
+              .AllowAnyHeader()
+              .AllowAnyMethod();
+    });
+});
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(options =>
 {
@@ -85,6 +97,10 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+// Aktifkan middleware CORS (wajib berada sebelum UseAuthorization)
+app.UseCors();
+
 app.UseAuthorization();
 app.MapControllers();
 

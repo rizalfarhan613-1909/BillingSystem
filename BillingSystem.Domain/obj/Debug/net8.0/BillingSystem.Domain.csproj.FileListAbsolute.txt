@@ -9,3 +9,4 @@ c:\Users\rizal\Project\BillingSystem\BillingSystem.Domain\obj\Debug\net8.0\Billi
 c:\Users\rizal\Project\BillingSystem\BillingSystem.Domain\obj\Debug\net8.0\refint\BillingSystem.Domain.dll
 c:\Users\rizal\Project\BillingSystem\BillingSystem.Domain\obj\Debug\net8.0\BillingSystem.Domain.pdb
 C:\Users\rizal\Project\BillingSystem\BillingSystem.Domain\obj\Debug\net8.0\ref\BillingSystem.Domain.dll
+C:\Users\rizal\Project\BillingSystem\BillingSystem.Domain\obj\Debug\net8.0\BillingSystem.Domain.sourcelink.json

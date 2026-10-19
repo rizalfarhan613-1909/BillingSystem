@@ -101,3 +101,4 @@ C:\Users\rizal\Project\BillingSystem\BillingSystem.Worker\obj\Debug\net8.0\Billi
 C:\Users\rizal\Project\BillingSystem\BillingSystem.Worker\obj\Debug\net8.0\BillingSystem.Worker.genruntimeconfig.cache
 C:\Users\rizal\Project\BillingSystem\BillingSystem.Worker\obj\Debug\net8.0\ref\BillingSystem.Worker.dll
 C:\Users\rizal\Project\BillingSystem\BillingSystem.Worker\bin\Debug\net8.0\HealthChecks.Azure.Storage.Queues.dll
+C:\Users\rizal\Project\BillingSystem\BillingSystem.Worker\obj\Debug\net8.0\BillingSystem.Worker.sourcelink.json

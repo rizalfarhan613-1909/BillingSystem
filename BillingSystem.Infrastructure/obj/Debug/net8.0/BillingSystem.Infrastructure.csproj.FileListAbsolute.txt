@@ -15,3 +15,4 @@ c:\Users\rizal\Project\BillingSystem\BillingSystem.Infrastructure\obj\Debug\net8
 c:\Users\rizal\Project\BillingSystem\BillingSystem.Infrastructure\obj\Debug\net8.0\refint\BillingSystem.Infrastructure.dll
 c:\Users\rizal\Project\BillingSystem\BillingSystem.Infrastructure\obj\Debug\net8.0\BillingSystem.Infrastructure.pdb
 c:\Users\rizal\Project\BillingSystem\BillingSystem.Infrastructure\obj\Debug\net8.0\ref\BillingSystem.Infrastructure.dll
+C:\Users\rizal\Project\BillingSystem\BillingSystem.Infrastructure\obj\Debug\net8.0\BillingSystem.Infrastructure.sourcelink.json

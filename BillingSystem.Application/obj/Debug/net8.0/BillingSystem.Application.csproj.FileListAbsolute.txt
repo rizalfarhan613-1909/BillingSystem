@@ -13,3 +13,4 @@ c:\Users\rizal\Project\BillingSystem\BillingSystem.Application\obj\Debug\net8.0\
 c:\Users\rizal\Project\BillingSystem\BillingSystem.Application\obj\Debug\net8.0\refint\BillingSystem.Application.dll
 c:\Users\rizal\Project\BillingSystem\BillingSystem.Application\obj\Debug\net8.0\BillingSystem.Application.pdb
 C:\Users\rizal\Project\BillingSystem\BillingSystem.Application\obj\Debug\net8.0\ref\BillingSystem.Application.dll
+C:\Users\rizal\Project\BillingSystem\BillingSystem.Application\obj\Debug\net8.0\BillingSystem.Application.sourcelink.json
